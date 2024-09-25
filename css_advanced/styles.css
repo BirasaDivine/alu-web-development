@@ -6,7 +6,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto',sans serif;
-    background-color: aqua;
 
 }
 
@@ -15,7 +14,6 @@ header {
     justify-content: space-between; 
     align-items: center; 
     padding: 20px 100px; 
-    background-color: red; 
     position: fixed;
     width: -webkit-fill-available;
     backdrop-filter: blur(1px);
@@ -46,10 +44,12 @@ header {
     border-radius: 5px; 
 }
 .hero{
-    position: relative;
-    display: block;
-    background-image: url('assets/images/Bitmap.png');
+    width: 100vw;
     height: 100vh;
+    background-image: url(assets/images/Bitmap.png);
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 
 }
 .headline{
@@ -60,24 +60,18 @@ header {
     margin: 20px 0;
     position: relative;
     z-index: 1;
-    padding-top: 10px;
+    padding-top: 200px;
     background-color: transparent;
 
 
-}
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
 }
 .smiling{
     display: flex;
     color: white;
     text-align: center;
+    justify-content: center;
     font-size: small;
-    margin: 10px 0;
+    margin: 10px 10px;
     gap: 40px;
     flex-direction: row;
     font-weight: bold;
@@ -85,17 +79,15 @@ main {
 }
 .register{
    display: block;
-   color: white;
    background-color: blueviolet;
    border: none;
    padding: 12px 24px;
    font-family:"Source Sans Pro", sans-serif;
-   font-size: 18px;
+   font-size: 20px;
    width: 200px;
    border-radius: 20px;
-   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 6px;
    cursor: pointer;
-   margin: 0 auto;
+   margin: 30px auto;
    text-align: center;
     
 }
@@ -109,18 +101,22 @@ main {
 .purpletext{
     color: blueviolet;
     font-weight: bold;
+    margin-top: 100px;
     
-
+    
+}
+.people{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
 
 }
 .person1, .person2, .person3, .person4 {
-    background-color: #f9f9f9; 
-    padding: 20px; 
+    
     text-align: center; 
     border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    flex-basis: 250px; 
-    flex-grow: 1; /
+    
 }
 .person1 img, .person2 img, .person3 img, .person4 img {
     width: 100px; 
@@ -133,4 +129,39 @@ main {
     font-weight: bold;
     font-size: 1.1rem; 
     color: #333; 
+  }
+  .presenter{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+   background-color: purple;
+  }
+  .happy{
+  display: flex;
+  align-items: center;
+  }
+  .happy div{
+    max-width: 600px;
+  }
+  .happy div p{
+    margin: 10px auto;
+  }
+  .tutorials{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+  }
+  .videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
   }
