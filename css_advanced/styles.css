@@ -47,11 +47,13 @@ header {
     width: 100vw;
     height: 100vh;
     background-image: url(assets/images/Bitmap.png);
+    filter: grayscale(100%);
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 
 }
+
 .headline{
     font-family: "Source Sans Pro", sans-serif;
     font-size: 80px;
@@ -139,10 +141,13 @@ header {
     display: flex;
     justify-content: center;
    background-color: purple;
+
   }
   .happy{
   display: flex;
+  gap: 50px;
   align-items: center;
+  justify-content: space-between;
   }
   .happy div{
     max-width: 600px;
@@ -152,6 +157,7 @@ header {
   }
   .tutorials{
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 400px;
@@ -165,3 +171,16 @@ header {
     gap: 100px;
     margin-top: 50px;
   }
+  .popular{
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .author img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 15px; 
+  }
+
