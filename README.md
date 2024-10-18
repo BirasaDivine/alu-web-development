@@ -13,7 +13,3 @@ You can view the design file here.
 Fonts: If your computer is missing fonts, you can download the required fonts:
 Source Sans Pro
 Spin Cycle OT
-
-Important Notes
-Rounding Float Values: Some values in the design are in floats. Feel free to round these values for the sake of simplicity.
-Fonts: Ensure you have the necessary fonts installed to match the design. Links to missing fonts are provided above.
